@@ -1,0 +1,17 @@
+{
+  "name": "@serenity-dojo/todo-app",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "start": "ng serve",
+    "build": "ng build todo-app-ui --prod",
+    "~test": "ng test todo-app-ui --watch=false",
+    "test:watch": "ng test todo-app-ui",
+    "lint": "ng lint todo-app-ui",
+    "e2e": "ng e2e todo-app-ui"
+  },
+  "author": "Jan Molak <jan.molak@serenity.io>",
+  "license": "Apache-2.0"
+}
