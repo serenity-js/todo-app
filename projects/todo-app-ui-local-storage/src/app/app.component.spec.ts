@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'todo-app-local-storage'`, () => {
+  it(`should have as title 'todo-app-ui-local-storage'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('todo-app-local-storage');
+    expect(app.title).toEqual('todo-app-ui-local-storage');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('todo-app-local-storage app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('todo-app-ui-local-storage app is running!');
   });
 });

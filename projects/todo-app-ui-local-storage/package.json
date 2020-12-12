@@ -1,0 +1,16 @@
+{
+  "name": "@serenity-dojo/todo-app-ui-local-storage",
+  "version": "0.0.1",
+  "description": "",
+  "main": "karma.conf.js",
+  "scripts": {
+    "start": "ng serve",
+    "build": "ng build todo-app-ui-local-storage --prod",
+    "test": "ng test todo-app-ui-local-storage --watch=false",
+    "test:watch": "ng test todo-app-ui-local-storage",
+    "lint": "ng lint todo-app-ui-local-storage",
+    "e2e": "ng test todo-app-ui-local-storage"
+  },
+  "author": "Jan Molak <jan.molak@serenity.io>",
+  "license": "Apache-2.0"
+}
