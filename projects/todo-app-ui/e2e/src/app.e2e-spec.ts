@@ -13,6 +13,6 @@ describe('workspace-project App', () => {
   it('should display welcome message', async () => {
     await page.navigateTo();
 
-    expect(await page.getTitleText()).to.equal('todo-app-ui app is running!');
+    await expect(page.getTitleText()).to.eventually.equal('todo-app-ui app is running!');
   });
 });

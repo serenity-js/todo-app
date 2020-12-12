@@ -13,12 +13,13 @@ exports.config = {
   capabilities: {
     browserName: 'chrome'
   },
+  chromeDriver: require(`chromedriver/lib/chromedriver`).path,
   directConnect: true,
   SELENIUM_PROMISE_MANAGER: false,
   baseUrl: 'http://localhost:4200/',
   framework: 'mocha',
   mochaOpts: {
-
+    timeout: 60 * 1000,
   },
   onPrepare() {
     require('ts-node').register({
