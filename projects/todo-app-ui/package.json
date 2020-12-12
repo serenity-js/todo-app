@@ -4,6 +4,7 @@
   "description": "",
   "main": "karma.conf.js",
   "scripts": {
+    "clean": "rimraf dist",
     "start": "ng serve",
     "build": "ng build todo-app-ui --prod",
     "test": "ng test todo-app-ui --watch=false",

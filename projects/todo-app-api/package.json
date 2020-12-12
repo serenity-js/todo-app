@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
+    "clean": "rimraf dist",
     "build": "tsc --project tsconfig.json",
     "test": "mocha --config ../../.mocharc.yml 'spec/**/*.spec.ts'",
     "lint": "tslint --project tsconfig.lint.json --format stylish"
