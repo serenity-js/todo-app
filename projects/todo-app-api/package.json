@@ -5,10 +5,9 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "ng build todo-app-ui --prod",
+    "build": "tsc --project tsconfig.json",
     "test": "mocha --config ../../.mocharc.yml 'spec/**/*.spec.ts'",
-    "lint": "tslint --project tsconfig.lint.json --format stylish",
-    "e2e": "ng e2e todo-app-ui"
+    "lint": "tslint --project tsconfig.lint.json --format stylish"
   },
   "author": "Jan Molak <jan.molak@serenity.io>",
   "license": "Apache-2.0"
