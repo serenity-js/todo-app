@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, '../../coverage/todo-app-ui-local-storage'),
+      dir: require('path').join(__dirname, '../../coverage/todo-app-ui'),
       subdir: '.',
       reporters: [
         { type: 'html' },

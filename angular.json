@@ -119,28 +119,28 @@
         }
       }
     },
-    "todo-app-ui-local-storage": {
+    "todo-app-ui": {
       "projectType": "application",
       "schematics": {},
-      "root": "projects/todo-app-ui-local-storage",
-      "sourceRoot": "projects/todo-app-ui-local-storage/src",
+      "root": "projects/todo-app-ui",
+      "sourceRoot": "projects/todo-app-ui/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "projects/todo-app-ui-local-storage/dist",
-            "index": "projects/todo-app-ui-local-storage/src/index.html",
-            "main": "projects/todo-app-ui-local-storage/src/main.ts",
-            "polyfills": "projects/todo-app-ui-local-storage/src/polyfills.ts",
-            "tsConfig": "projects/todo-app-ui-local-storage/tsconfig.app.json",
+            "outputPath": "projects/todo-app-ui/dist",
+            "index": "projects/todo-app-ui/src/index.html",
+            "main": "projects/todo-app-ui/src/main.ts",
+            "polyfills": "projects/todo-app-ui/src/polyfills.ts",
+            "tsConfig": "projects/todo-app-ui/tsconfig.app.json",
             "aot": true,
             "assets": [
-              "projects/todo-app-ui-local-storage/src/favicon.ico",
-              "projects/todo-app-ui-local-storage/src/assets"
+              "projects/todo-app-ui/src/favicon.ico",
+              "projects/todo-app-ui/src/assets"
             ],
             "styles": [
-              "projects/todo-app-ui-local-storage/src/styles.css"
+              "projects/todo-app-ui/src/styles.css"
             ],
             "scripts": []
           },
@@ -148,8 +148,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/todo-app-ui-local-storage/src/environments/environment.ts",
-                  "with": "projects/todo-app-ui-local-storage/src/environments/environment.prod.ts"
+                  "replace": "projects/todo-app-ui/src/environments/environment.ts",
+                  "with": "projects/todo-app-ui/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -177,33 +177,33 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "todo-app-ui-local-storage:build"
+            "browserTarget": "todo-app-ui:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "todo-app-ui-local-storage:build:production"
+              "browserTarget": "todo-app-ui:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "todo-app-ui-local-storage:build"
+            "browserTarget": "todo-app-ui:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/todo-app-ui-local-storage/src/test.ts",
-            "polyfills": "projects/todo-app-ui-local-storage/src/polyfills.ts",
-            "tsConfig": "projects/todo-app-ui-local-storage/tsconfig.spec.json",
-            "karmaConfig": "projects/todo-app-ui-local-storage/karma.conf.js",
+            "main": "projects/todo-app-ui/src/test.ts",
+            "polyfills": "projects/todo-app-ui/src/polyfills.ts",
+            "tsConfig": "projects/todo-app-ui/tsconfig.spec.json",
+            "karmaConfig": "projects/todo-app-ui/karma.conf.js",
             "assets": [
-              "projects/todo-app-ui-local-storage/src/favicon.ico",
-              "projects/todo-app-ui-local-storage/src/assets"
+              "projects/todo-app-ui/src/favicon.ico",
+              "projects/todo-app-ui/src/assets"
             ],
             "styles": [
-              "projects/todo-app-ui-local-storage/src/styles.css"
+              "projects/todo-app-ui/src/styles.css"
             ],
             "scripts": []
           }
@@ -212,9 +212,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/todo-app-ui-local-storage/tsconfig.app.json",
-              "projects/todo-app-ui-local-storage/tsconfig.spec.json",
-              "projects/todo-app-ui-local-storage/e2e/tsconfig.json"
+              "projects/todo-app-ui/tsconfig.app.json",
+              "projects/todo-app-ui/tsconfig.spec.json",
+              "projects/todo-app-ui/e2e/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -224,12 +224,12 @@
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "projects/todo-app-ui-local-storage/e2e/protractor.conf.js",
-            "devServerTarget": "todo-app-ui-local-storage:serve"
+            "protractorConfig": "projects/todo-app-ui/e2e/protractor.conf.js",
+            "devServerTarget": "todo-app-ui:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "todo-app-ui-local-storage:serve:production"
+              "devServerTarget": "todo-app-ui:serve:production"
             }
           }
         }
