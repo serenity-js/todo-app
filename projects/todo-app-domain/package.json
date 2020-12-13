@@ -10,7 +10,11 @@
     "test": "mocha --config '../../.mocharc.yml' '**/*.spec.ts'",
     "lint": "tslint --project tsconfig.lint.json --format stylish"
   },
-  "author": "Jan Molak <jan.molak@serenity.io>",
+  "author": {
+    "name": "Jan Molak",
+    "email": "jan.molak@serenity.io",
+    "url": "https://janmolak.com"
+  },
   "license": "Apache-2.0",
   "dependencies": {
     "tiny-types": "^1.15.0"
