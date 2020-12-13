@@ -2,14 +2,17 @@
   "name": "@serenity-dojo/todo-app-api",
   "version": "0.0.1",
   "description": "",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc --project tsconfig.json",
-    "test": "mocha --config ../../.mocharc.yml 'spec/**/*.spec.ts'",
+    "test": "mocha --require 'ts-node/register' --require 'spec/.serenity.ts' --config '../../.mocharc.yml' 'spec/**/*.spec.ts'",
     "lint": "tslint --project tsconfig.lint.json --format stylish"
   },
   "author": "Jan Molak <jan.molak@serenity.io>",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@serenity-dojo/todo-app-domain": "0.0.1"
+  }
 }

@@ -2,7 +2,9 @@
   "name": "@serenity-dojo/todo-app-ui",
   "version": "0.0.1",
   "description": "",
-  "main": "karma.conf.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "clean": "rimraf dist",
     "start": "ng serve",

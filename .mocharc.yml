@@ -2,7 +2,6 @@ check-leaks: false
 color: true
 diff: true
 full-trace: true
-#reporter: '@serenity-js/mocha'
 reporter: 'spec'
 require:
   - 'ts-node/register'
