@@ -17,6 +17,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
+    "@serenity-dojo/todo-app-domain": "0.0.1",
     "@serenity-dojo/todo-app-ui": "0.0.1",
     "@serenity-dojo/todo-app-api": "0.0.1",
     "yargs": "^16.2.0"

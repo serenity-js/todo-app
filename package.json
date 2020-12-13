@@ -5,7 +5,7 @@
     "clean": "lerna run clean --stream --parallel",
     "ng": "ng",
     "start": "ng serve",
-    "build": "lerna run build --stream --parallel",
+    "build": "lerna run build --stream",
     "test": "lerna run test --stream",
     "lint": "lerna run lint --stream --parallel",
     "e2e": "lerna run e2e --stream",
