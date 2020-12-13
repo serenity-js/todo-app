@@ -10,9 +10,14 @@
     "test": "mocha --require 'ts-node/register' --require 'spec/.serenity.ts' --config '../../.mocharc.yml' 'spec/**/*.spec.ts'",
     "lint": "tslint --project tsconfig.lint.json --format stylish"
   },
-  "author": "Jan Molak <jan.molak@serenity.io>",
+  "author": {
+    "name": "Jan Molak",
+    "email": "jan.molak@serenity.io",
+    "url": "https://janmolak.com"
+  },
   "license": "Apache-2.0",
   "dependencies": {
-    "@serenity-dojo/todo-app-domain": "0.0.1"
+    "@serenity-dojo/todo-app-domain": "0.0.1",
+    "json-server": "^0.16.3"
   }
 }

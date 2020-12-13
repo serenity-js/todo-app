@@ -8,7 +8,7 @@ import { api } from '../src';
 class Actors implements Cast {
   prepare(actor: Actor): Actor {
     return actor.whoCan(
-      ManageALocalServer.runningAHttpListener(api({ logger: false }, { todos: [] })),
+      ManageALocalServer.runningAHttpListener(api('/', { todos: [] }, { logger: false })),
       CallAnApi.using(axios.create()),
       TakeNotes.usingAnEmptyNotepad(),
     );
