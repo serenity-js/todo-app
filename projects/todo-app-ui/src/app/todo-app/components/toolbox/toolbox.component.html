@@ -1,0 +1,10 @@
+<span class="todo-count"><strong>{{ remaining.length }}</strong> item{{ remaining.length !== 1 ? 's' : ''}} left</span>
+
+<ul class="filters">
+  <li><a [routerLink]="['']" [ngClass]="{'selected': filter.name == 'all'}">All</a></li>
+  <li><a [routerLink]="['', 'active']" [ngClass]="{'selected': filter.name == 'active'}">Active</a></li>
+  <li><a [routerLink]="['', 'completed']" [ngClass]="{'selected': filter.name == 'completed'}">Completed</a>
+  </li>
+</ul>
+
+<button *ngIf="completed.length > 0" class="clear-completed" (click)="removeAll(completed)">Clear completed</button>

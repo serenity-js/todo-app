@@ -1,0 +1,32 @@
+<section class="todoapp">
+  <header class="header">
+    <h1>todos</h1>
+    <sjs-new-todo-input (newItemRequested)="addNewItem($event)"></sjs-new-todo-input>
+  </header>
+
+  <section *ngIf="todos.length > 0" class="main">
+    <sjs-toggle-all-button
+      (toggleAllRequested)="setAllToCompleted($event)"
+      [allCompleted]="remaining.length === 0"
+    ></sjs-toggle-all-button>
+
+    <ul class="todo-list">
+      <li sjs-todo-item *ngFor="let todo of filteredTodos"
+          [todo]="todo"
+          (todoEditRequested)="update($event)"
+          (todoDeleteRequested)="delete($event)"
+          class="todo" [ngClass]="{'completed' : todo.completed }">
+      ></li>
+    </ul>
+  </section>
+
+  <footer *ngIf="todos.length > 0" class="footer">
+    <sjs-toolbox
+      [remaining]="remaining"
+      [completed]="completed"
+      (deleteAllTodosRequested)="deleteAll($event)"
+      [filter]="filter"
+    ></sjs-toolbox>
+  </footer>
+
+</section>

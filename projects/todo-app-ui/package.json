@@ -10,7 +10,7 @@
     "clean": "rimraf dist",
     "start": "ng serve",
     "build": "ng build todo-app-ui --prod",
-    "test": "ng test todo-app-ui --watch=false",
+    "test": "ng test todo-app-ui --watch=false --browsers ChromeHeadless",
     "test:watch": "ng test todo-app-ui",
     "lint": "ng lint todo-app-ui",
     "e2e": "ng e2e todo-app-ui"
@@ -20,5 +20,10 @@
     "email": "jan.molak@serenity.io",
     "url": "https://janmolak.com"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@serenity-dojo/todo-app-domain": "0.0.1",
+    "todomvc-app-css": "^2.3.0",
+    "todomvc-common": "^1.0.5"
+  }
 }

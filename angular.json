@@ -8,7 +8,7 @@
       "schematics": {},
       "root": "projects/todo-app-ui",
       "sourceRoot": "projects/todo-app-ui/src",
-      "prefix": "app",
+      "prefix": "sjs",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -21,12 +21,18 @@
             "aot": true,
             "assets": [
               "projects/todo-app-ui/src/favicon.ico",
+              "projects/todo-app-ui/src/config.json",
               "projects/todo-app-ui/src/assets"
             ],
             "styles": [
               "projects/todo-app-ui/src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "projects/todo-app-ui/src/scripts/cookieinfo.min.js"
+            ],
+            "allowedCommonJsDependencies": [
+              "@serenity-dojo/todo-app-domain"
+            ]
           },
           "configurations": {
             "production": {

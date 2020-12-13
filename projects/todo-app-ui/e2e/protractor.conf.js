@@ -10,9 +10,6 @@ exports.config = {
   specs: [
     './src/**/*.e2e-spec.ts'
   ],
-  capabilities: {
-    browserName: 'chrome'
-  },
   chromeDriver: require(`chromedriver/lib/chromedriver`).path,
   directConnect: true,
   SELENIUM_PROMISE_MANAGER: false,
@@ -25,5 +22,26 @@ exports.config = {
     require('ts-node').register({
       project: require('path').join(__dirname, './tsconfig.json')
     });
+  },
+  capabilities: {
+    browserName: 'chrome',
+
+    // see https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities#loggingpreferences-json-object
+    loggingPrefs: {
+      browser: 'SEVERE' // "OFF", "SEVERE", "WARNING", "INFO", "CONFIG", "FINE", "FINER", "FINEST", "ALL".
+    },
+
+    chromeOptions: {
+      args: [
+        '--no-sandbox',
+        '--disable-infobars',
+        '--disable-dev-shm-usage',
+        '--disable-extensions',
+        '--log-level=3',
+        '--disable-gpu',
+        '--window-size=1920,1080',
+        '--headless',
+      ]
+    }
   }
 };

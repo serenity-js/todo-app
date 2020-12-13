@@ -1,0 +1,13 @@
+<div class="view">
+  <input class="toggle" type="checkbox" (change)="toggle(todo)" [checked]="todo.completed" />
+  <label *ngIf="! isEditing" (dblclick)="edit(todo)">{{ todo.name }}</label>
+  <button (click)="delete(todo)" class="destroy"></button>
+</div>
+
+<input class="edit" autofocus
+       *ngIf="isEditing"
+       (keyup.enter)="update()"
+       [(ngModel)]="editedTodo.name"
+       (keyup.esc)="cancelEdit()"
+       (focusout)="cancelEdit()"
+/>
