@@ -22,7 +22,8 @@
             "assets": [
               "projects/todo-app-ui/src/favicon.ico",
               "projects/todo-app-ui/src/config.json",
-              "projects/todo-app-ui/src/assets"
+              "projects/todo-app-ui/src/assets",
+              "projects/todo-app-ui/src/CNAME"
             ],
             "styles": [
               "projects/todo-app-ui/src/styles.css"
