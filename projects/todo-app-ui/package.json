@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "clean": "rimraf dist",
-    "start": "ng serve",
+    "start": "ng serve todo-app-ui",
     "build": "ng build todo-app-ui --prod",
     "test": "ng test todo-app-ui --watch=false --browsers ChromeHeadless",
     "test:watch": "ng test todo-app-ui",

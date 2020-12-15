@@ -47,6 +47,13 @@ jobs:
             projects/*/index.js
             projects/*/package.json
 
+      - name: Publish artifacts
+        if: matrix.node-version == '14.x' && github.ref == 'refs/heads/master'
+        run: npm run lerna:publish
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
   automerge:
     name: Auto-merge dependency updates
     runs-on: ubuntu-latest
