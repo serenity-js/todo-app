@@ -2,5 +2,22 @@
   "packages": [
     "projects/*"
   ],
-  "version": "0.0.0"
+  "version": "0.0.1",
+  "command": {
+    "create": {
+      "homepage": "https://serenity-js.org",
+      "license": "Apache-2.0"
+    },
+    "publish": {
+      "loglevel": "verbose"
+    },
+    "version": {
+      "allowBranch": "master",
+      "conventionalCommits": true,
+      "createRelease": "github",
+      "exact": true,
+      "message": "chore(release): %s\n[ci skip]",
+      "loglevel": "verbose"
+    }
+  }
 }

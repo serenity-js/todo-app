@@ -1,6 +1,6 @@
 {
   "name": "@serenity-dojo/todo-app-workspace",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "clean": "lerna run clean --stream --parallel",
     "ng": "ng",
@@ -10,7 +10,10 @@
     "lint": "lerna run lint --stream --parallel",
     "e2e": "lerna run e2e --stream",
     "postinstall": "lerna bootstrap --hoist",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "lerna:publish": "lerna publish --yes",
+    "lerna:test:version": "lerna version --no-git-tag-version --no-push",
+    "lerna:test:publish": "lerna publish --no-git-tag-version --no-push"
   },
   "private": true,
   "dependencies": {

@@ -1,21 +1,53 @@
 {
   "name": "@serenity-dojo/todo-app",
   "version": "0.0.1",
-  "description": "",
+  "description": "Serenity/JS Todo App",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "bin",
+    "dist",
+    "CHANGELOG.md",
+    "LICENSE.md",
+    "NOTICE.md"
+  ],
+  "funding": {
+    "url": "https://github.com/sponsors/serenity-js"
+  },
+  "homepage": "https://serenity-js.org",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Jan Molak",
+    "email": "jan.molak@serenity.io",
+    "url": "https://janmolak.com"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "serenity-js",
+    "tdd",
+    "bdd",
+    "test",
+    "testing"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/serenity-js/todo-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/serenity-js/todo-app/issues"
+  },
+  "engines": {
+    "node": ">= 10",
+    "npm": ">= 6"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc --project tsconfig.json",
     "test": "mocha --config ../../.mocharc.yml 'spec/**/*.spec.ts'",
     "lint": "tslint --project tsconfig.lint.json --format stylish"
   },
-  "author": {
-    "name": "Jan Molak",
-    "email": "jan.molak@serenity.io",
-    "url": "https://janmolak.com"
-  },
-  "license": "Apache-2.0",
   "dependencies": {
     "@serenity-dojo/todo-app-domain": "0.0.1",
     "@serenity-dojo/todo-app-ui": "0.0.1",
