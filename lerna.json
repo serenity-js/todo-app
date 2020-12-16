@@ -2,7 +2,7 @@
   "packages": [
     "projects/*"
   ],
-  "version": "0.0.1",
+  "version": "0.1.0",
   "command": {
     "create": {
       "homepage": "https://serenity-js.org",
