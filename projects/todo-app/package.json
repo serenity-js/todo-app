@@ -4,12 +4,16 @@
   "description": "Serenity/JS Todo App",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "bin": {
+    "todo-app": "bin/todo-app"
+  },
   "files": [
     "bin",
     "dist",
     "CHANGELOG.md",
     "LICENSE.md",
-    "NOTICE.md"
+    "NOTICE.md",
+    "README.md"
   ],
   "funding": {
     "url": "https://github.com/sponsors/serenity-js"
