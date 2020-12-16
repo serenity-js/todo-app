@@ -16,6 +16,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          fetch-depth: 0
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -26,6 +29,20 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+
+      - name: Update Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get --only-upgrade install google-chrome-stable
+          google-chrome --version
+
+      - uses: ./.github/actions/setup-lerna
+        with:
+          github_token:   ${{ secrets.GH_TOKEN }}
+          git_user_email: ${{ secrets.GIT_USER_EMAIL }}
+          git_username:   ${{ secrets.GIT_USER_NAME }}
+          npm_token:      ${{ secrets.NPM_TOKEN }}
+
       - run: npm ci
       - run: npm run clean
       - run: npm run lint
