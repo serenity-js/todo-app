@@ -51,8 +51,6 @@
     "e2e": "ng e2e todo-app-ui"
   },
   "dependencies": {
-    "@serenity-dojo/todo-app-domain": "0.1.1",
-    "todomvc-app-css": "^2.3.0",
-    "todomvc-common": "^1.0.5"
+    "@serenity-dojo/todo-app-domain": "0.1.1"
   }
 }

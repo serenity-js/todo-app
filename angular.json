@@ -26,7 +26,9 @@
               "projects/todo-app-ui/src/CNAME"
             ],
             "styles": [
-              "projects/todo-app-ui/src/styles.css"
+              "projects/todo-app-ui/src/styles.css",
+              "node_modules/todomvc-common/base.css",
+              "node_modules/todomvc-app-css/index.css"
             ],
             "scripts": [
               "projects/todo-app-ui/src/scripts/cookieinfo.min.js"
