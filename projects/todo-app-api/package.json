@@ -45,7 +45,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "tsc --project tsconfig.json",
-    "test": "mocha --require 'ts-node/register' --require 'spec/.serenity.ts' --config '../../.mocharc.yml' 'spec/**/*.spec.ts'",
+    "test": "TS_NODE_PROJECT='./tsconfig.json' mocha --config '../../.mocharc.yml' --require 'ts-node/register' --require 'spec/.serenity.ts' 'spec/**/*.spec.ts'",
+    "e2e": "npm test",
     "lint": "tslint --project tsconfig.lint.json --format stylish"
   },
   "dependencies": {
