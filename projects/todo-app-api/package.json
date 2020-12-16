@@ -1,6 +1,6 @@
 {
   "name": "@serenity-dojo/todo-app-api",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Serenity/JS Todo App API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -49,7 +49,7 @@
     "lint": "tslint --project tsconfig.lint.json --format stylish"
   },
   "dependencies": {
-    "@serenity-dojo/todo-app-domain": "0.1.2",
+    "@serenity-dojo/todo-app-domain": "0.2.0",
     "json-server": "^0.16.3"
   }
 }
