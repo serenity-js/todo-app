@@ -1,6 +1,6 @@
 {
   "name": "@serenity-dojo/todo-app-ui",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Serenity/JS Todo App UI",
   "main": "index.js",
   "files": [
@@ -51,6 +51,6 @@
     "e2e": "ng e2e todo-app-ui"
   },
   "dependencies": {
-    "@serenity-dojo/todo-app-domain": "0.1.1"
+    "@serenity-dojo/todo-app-domain": "0.1.2"
   }
 }
