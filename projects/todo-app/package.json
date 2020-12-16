@@ -1,6 +1,6 @@
 {
   "name": "@serenity-dojo/todo-app",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Serenity/JS Todo App",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -49,9 +49,9 @@
     "lint": "tslint --project tsconfig.lint.json --format stylish"
   },
   "dependencies": {
-    "@serenity-dojo/todo-app-domain": "0.0.1",
-    "@serenity-dojo/todo-app-ui": "0.0.1",
-    "@serenity-dojo/todo-app-api": "0.0.1",
+    "@serenity-dojo/todo-app-api": "0.1.0",
+    "@serenity-dojo/todo-app-domain": "0.1.0",
+    "@serenity-dojo/todo-app-ui": "0.1.0",
     "yargs": "^16.2.0"
   }
 }
